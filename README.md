@@ -25,15 +25,30 @@ A modern front-end application for managing purchase orders and submitting them 
 **⚠️ IMPORTANT: Set up credentials first!**
 
 1. Clone the repository
+
 2. **Create environment files** (contains sensitive credentials):
+
+**Main app `.env` file (root directory):**
 ```bash
-# Copy example files
+# Copy the example file
 cp .env.example .env
+
+# Edit .env and set:
+VITE_COMPANY_NAME=YourCompanyName
+```
+
+**Proxy server `.env` file (proxy-server directory):**
+```bash
+# Copy the example file
 cd proxy-server
 cp .env.example .env
-cd ..
 
-# Edit proxy-server/.env and add your actual credentials
+# Edit proxy-server/.env and set:
+CLIENT_ID=your_client_id
+CLIENT_SECRET=your_client_secret
+B2B_API_URL=https://b2b-inbound-http-pj32.us-w1.cloudhub.io:443/receive1/ib-src-purchase-order-json
+
+cd ..
 ```
 
 3. Install dependencies for the main app:

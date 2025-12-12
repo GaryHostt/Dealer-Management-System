@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document verifies that dynamically added line items are correctly included in the API payload sent to Volvo's target system.
+This document verifies that dynamically added line items are correctly included in the API payload sent to <company>'s target system.
 
 ## How It Works
 
@@ -128,7 +128,7 @@ Create Payload Object (B2BMessage structure)
     ↓
 Send to Proxy Server (http://localhost:3001)
     ↓
-Forward to Volvo API (with authentication headers)
+Forward to <company> API (with authentication headers)
     ↓
 Target System Receives ALL Line Items
 ```
